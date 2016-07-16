@@ -1,0 +1,42 @@
+git命令
+1、git初始化
+git init
+2、创建文件
+new-item -type file filename
+3、编辑文件
+notepad filename
+4、文件添加
+git add filename
+5、文件提交
+git commit -m "modify …"
+6、创建分支
+git branch dev
+7、切换分支
+git checkout dev
+8、不同分支下版本混合
+git merge dev
+9、查看状态
+git status\gitk
+10、查看记录
+git log
+11、版本回退
+git reset --hard head^
+12、版本还原
+git reset --hard 版本号
+13、配置git
+git config --global user.name ""
+14、分支合并
+git rebase --onto master
+15、head回退
+git checkout hash值
+git checkout bugFix^
+git branch -f master HEAD~3
+
+1、github初次关联：
+git remote add origin https://github.com/bjtuln/confilct.git
+2、初次提交
+git push -u origin master
+3、提交
+git push
+4、本地更新远程文件
+git pull --rebase
